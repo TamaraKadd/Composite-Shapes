@@ -14,3 +14,6 @@ circleDiameter = displayHeight;
 //Canvas
 rect(rectX, rectY, rectWidth, rectHeight);
 ellipse(circleX, circleY, circleDiameter, circleDiameter);
+//ellipse(leftEyeX, leftEyeY, eyeDiamter, eyeDiamter);
+//ellipse(rightEyeX, rightEyeY, eyeDiamter, eyeDiamter);
+triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
