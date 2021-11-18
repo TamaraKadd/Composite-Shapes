@@ -42,19 +42,17 @@ void setup() {
   mouthY2 = mouthY1;
   mouthThick = 20;
   reset = 1;
+//
+ rect(rectX, rectY, rectWidth, rectHeight);
+  ellipse(faceX, faceY, faceDiameter, faceDiameter);
+
 }
 
 void draw() {
   //
   color measlesColour = color(random(0, 225), random(255), random(255));
   //
-  measleX = random(displayWidth);
-  measleY  = random(displayHeight);
-  measleDiameter = random(displayHeight*1/20, displayHeight*1/10);
-  //Canvas
-  rect(rectX, rectY, rectWidth, rectHeight);
-  ellipse(faceX, faceY, faceDiameter, faceDiameter);
-  fill(purple);
+    fill(purple);
   ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
   fill(reset);
   fill(green);
@@ -64,23 +62,15 @@ void draw() {
   strokeWeight(mouthThick);
   line(mouthX1, mouthY1, mouthX2, mouthY2);
   strokeWeight(reset);
+  //Canvas
+ 
+  
+   measleX = random(faceDiameter);
+  measleY  = random(faceY);
+  measleDiameter = random(displayHeight*1/20, displayHeight*1/10);
   fill(measlesColour);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
-  ellipse(measleX, measleY, measleDiameter, measleDiameter);
+ 
+
+   ellipse(measleX, measleY, measleDiameter, measleDiameter);
   fill(resetColour);
 }
