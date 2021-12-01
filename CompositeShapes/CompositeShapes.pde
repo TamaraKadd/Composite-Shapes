@@ -65,8 +65,8 @@ void draw() {
   //Canvas
  
   
-   measleX = random(faceDiameter);
-  measleY  = random(faceY);
+   measleX = random(displayWidth*1/4, displayWidth*3/4);
+  measleY  = random(displayHeight);
   measleDiameter = random(displayHeight*1/20, displayHeight*1/10);
   fill(measlesColour);
  
